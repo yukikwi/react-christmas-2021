@@ -10,11 +10,14 @@ import christmasTree from '../assets/img/christmas-tree.svg'
 // markup
 const IndexPage = () => {
   return (
-    <div className="h-screen bg-dark-red-color">
+    <div className="h-screen bg-dark-red-color relative overflow-hidden">
       <Snow />
       <Container>
         <RainbowText>Merry Christmas 2021</RainbowText>
-        <h3 className="text-white mx-auto text-center mb-10 mb:text-xl text-md md:w-full w-5/6">Wishing you a <strong>Merry christmas</strong> and <strong>Happy New year</strong> - <  strong>yukikwi@github.com</strong></h3>
+        <div className="text-white mx-auto text-center mb-10 mb:text-3xl text-xl md:w-full w-5/6">
+          <h3 className="inline-block">Wishing you a <strong>Merry christmas</strong> and <strong>Happy New year</strong>&nbsp;</h3>
+          <h3 className="inline-block"><strong>&mdash; yukikwi@github.com</strong></h3>
+        </div>
         <img className="w-24" src={christmasTree} alt="christmas tree" />
       </Container>
 
