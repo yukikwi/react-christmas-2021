@@ -12,6 +12,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
+        // ref: https://www.freecodecamp.org/news/how-to-enable-offline-mode-for-gatsby-site/
+        precachePages: [`/`],
         icon: "src/images/icon.png",
       },
     },
