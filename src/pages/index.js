@@ -1,6 +1,7 @@
 import * as React from "react"
 import '../assets/css/main.css'
 import '../assets/css/snow.scss'
+import { Helmet } from "react-helmet"
 import styled, {keyframes} from 'styled-components'
 import tw from 'tailwind-styled-components'
 import Snow from '../components/Snow'
@@ -13,9 +14,15 @@ const IndexPage = () => {
       <Snow />
       <Container>
         <RainbowText>Merry Christmas 2021</RainbowText>
-        <h3 className="text-white mx-auto text-center mb-10 mb:text-md text-sm md:w-full w-5/6">Wishing you a Merry christmas and Happy New year - yukikwi@github.com</h3>
+        <h3 className="text-white mx-auto text-center mb-10 mb:text-xl text-md md:w-full w-5/6">Wishing you a <strong>Merry christmas</strong> and <strong>Happy New year</strong> - <  strong>yukikwi@github.com</strong></h3>
         <img className="w-24" src={christmasTree} alt="christmas tree" />
       </Container>
+
+      {/* Meta */}
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Merry Christmas 2021 🎅</title>
+      </Helmet>
     </div>
   )
 }
@@ -41,9 +48,6 @@ const RainbowTextCss = styled.h1`
 	animation: ${gradient} 10s ease infinite;
 	background-size: 400% 400%;
   -webkit-text-stroke: 1px white;
-  @media (min-width: 768px) {
-    -webkit-text-stroke: 2px white;
-  }
 `
 const RainbowText = tw(RainbowTextCss)`
   text-3xl
