@@ -25,4 +25,6 @@ module.exports = {
       __key: "images",
     },
   ],
+  // Gitpages
+  pathPrefix: "/react-christmas-2021",
 };

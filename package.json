@@ -1,1 +1,42 @@
-{"name":"christmas-2021","version":"1.0.0","private":true,"description":"Christmas 2021","author":"Pachara Chantawong","keywords":["gatsby"],"scripts":{"develop":"gatsby develop","start":"gatsby develop","build":"gatsby build","serve":"gatsby serve","clean":"gatsby clean"},"dependencies":{"gatsby":"^4.4.0","gatsby-image":"^3.11.0","gatsby-plugin-manifest":"^4.4.0","gatsby-plugin-offline":"^5.4.0","gatsby-plugin-postcss":"^5.4.0","gatsby-plugin-react-helmet":"^5.4.0","gatsby-plugin-sass":"^5.4.0","gatsby-plugin-sharp":"^4.4.0","gatsby-source-filesystem":"^4.4.0","gatsby-transformer-sharp":"^4.4.0","postcss":"^8.4.5","react":"^17.0.1","react-dom":"^17.0.1","react-helmet":"^6.1.0","sass":"^1.45.1","styled-components":"^5.3.3"},"devDependencies":{"autoprefixer":"^10.4.0","tailwind-styled-components":"^2.0.3","tailwindcss":"^3.0.7"}}
+{
+    "name": "christmas-2021",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Christmas 2021",
+    "author": "Pachara Chantawong",
+    "keywords": [
+      "gatsby"
+    ],
+    "scripts": {
+      "develop": "gatsby develop",
+      "start": "gatsby develop",
+      "build": "gatsby build",
+      "serve": "gatsby serve",
+      "clean": "gatsby clean",
+      "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    },
+    "dependencies": {
+      "gatsby": "^4.4.0",
+      "gatsby-image": "^3.11.0",
+      "gatsby-plugin-manifest": "^4.4.0",
+      "gatsby-plugin-offline": "^5.4.0",
+      "gatsby-plugin-postcss": "^5.4.0",
+      "gatsby-plugin-react-helmet": "^5.4.0",
+      "gatsby-plugin-sass": "^5.4.0",
+      "gatsby-plugin-sharp": "^4.4.0",
+      "gatsby-source-filesystem": "^4.4.0",
+      "gatsby-transformer-sharp": "^4.4.0",
+      "postcss": "^8.4.5",
+      "react": "^17.0.1",
+      "react-dom": "^17.0.1",
+      "react-helmet": "^6.1.0",
+      "sass": "^1.45.1",
+      "styled-components": "^5.3.3"
+    },
+    "devDependencies": {
+      "autoprefixer": "^10.4.0",
+      "gh-pages": "^3.2.3",
+      "tailwind-styled-components": "^2.0.3",
+      "tailwindcss": "^3.0.7"
+    }
+  }
