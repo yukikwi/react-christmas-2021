@@ -7,7 +7,7 @@ function Snow(props) {
   let snowUi = []
 
   for(let i = 1; i < n; i++){
-    snowUi.push(<div className='snow' />)
+    snowUi.push(<div key={i} className='snow' />)
   }
 
   return (
